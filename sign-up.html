@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-img sign-up" style="background-image: url('./images/sign-up-img.jpg');">
+            </div>
+            <div class="form">
+                <div class="form-title">
+                    Account sign up
+                </div>
+                <div class="input-container">
+                    <form action="">
+                        <div class="input-content">
+                            <div class="input-icon">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            
+                            <input type="text" name="text" id="" placeholder="John Doe" required>
+                        </div>
+                        <div class="input-content">
+                            <div class="input-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <input type="email" name="email" id="" placeholder="example@email.com" required>
+                        </div>
+                        <div class="input-content">
+                            <div class="input-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <input type="email" name="text" id="" placeholder="09123456789" onkeypress="return restrictAlphabets(event)" required>
+                        </div>
+                        <div class="input-content">
+                            <div class="input-icon">
+                                <i class="fa-solid fa-key"></i>
+                            </div>
+                            <input type="password" name="password" id="" placeholder="••••••••••••" required>
+                        </div>
+                        <div class="form-btn">
+                            <button type="submit" name="submit">Sign Up</button>
+                        </div>
+                    </form>
+                    <div class="terms-cond">
+                        By clicking Sign Up, you agree to our<br><a href="#">Terms and Conditions</a> and <a href="#">Privacy Statement.</a>
+                    </div>
+                </div>
+                <div class="forgot-container">
+                    <div class="content login">
+                        Already have an account? Login <a href="index.html">here.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Developed by: Christian Jefferson S. Tamayo
+    </div>
+    <script>
+        function restrictAlphabets(e) {
+            var num = e.which || e.keycode;
+            if ((num >= 48 && num <= 57))
+                return true;
+            else
+                return false;
+        }
+    </script>
+</body>
+</html>

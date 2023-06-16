@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #E9FAFF;
+    font-size: 16px;
+    color: #212529;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.form-container{
+    width: 720px;
+    background:#fff;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.form-img{
+    width: 40%;
+    height: 568px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.sign-up{
+    height: 648px;
+}
+.form{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.form .icon-login{
+    font-size: 4rem;
+}
+.form-container .form .form-title{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom:1rem;
+}
+.input-container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+input{
+    outline: none;
+    border:none;
+}
+.input-container form .input-content input{
+    width: 268px;
+    height: 50px;
+    margin-bottom:20px;
+    margin-right: 1rem;
+    padding-left:50px;
+    font-size: .85rem;
+    transition: all .5s;
+    border-radius: 5px;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.141), 0 1px 5px 0 rgba(0, 0, 0, 0.122);
+}
+.input-container form input:focus{
+    box-shadow: 0 3px 1px -2px #212529, 0 2px 2px 0 rgba(0, 0, 0, 0.122), 0 1px 4px 0 #212529;
+}
+.input-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.input-icon{
+    position: relative;
+    left:40px;
+    bottom:10px;
+    font-size: 1.15rem;
+    color: #212529;
+}
+button{
+    outline: none;
+    border:none;
+    background:none;
+    cursor: pointer;
+}
+.form-btn button{
+    width: 268px;
+    height: 50px;
+    padding:0 20px;
+    background-color:#00AD5F;
+    color:#FFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    transition: all .4s;
+}
+.form-btn button:hover{
+    background:#333;
+}
+.forgot-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding:1rem 0;
+    font-size: .85rem;
+}
+.forgot-container .content a{
+    color:#212529;
+    text-decoration: none;
+    transition: all .5s;
+}
+.forgot-container .login a{
+    color: #00AD5F;
+}
+.forgot-container .content a:hover{
+    text-decoration: underline;
+}
+.forgot-container .login a:hover {
+    text-decoration: none;
+    color: #333;
+}
+.left-side{
+    position: relative;
+    right: 18px;
+}
+.right-side{
+    position:relative;
+    left:18px;
+}
+.register-container{
+    position: relative;
+    top:80px;
+}
+.register-container .content a button{
+    text-transform: uppercase;
+    color: #00AD5F;
+    transition: all .5s;
+    font-size: .85rem;
+}
+.register-container .content a button:hover{
+    color: #333;
+    transition: all .5s;
+}
+.terms-cond{
+    text-align: center;
+    margin-top:.75rem;
+    margin-bottom:1rem;
+    font-size: .75rem;
+}
+.terms-cond a{
+    text-decoration: underline;
+    color: #00AD5F;
+    transition: all .5s;
+}
+.terms-cond a:hover{
+    color:#333;
+}
+.footer{
+    text-align: center;
+}
+@media screen and (min-width: 641px) and (max-width:960px) {
+    .form-img{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 3rem;
+    }
+    .form-container {
+        flex-direction: column;
+        width: 568px;
+    }
+    .form {
+        width: 100%;
+    }
+    .input-container form .input-content input{
+        width: 468px;
+    }
+    .form-btn button{
+        width: 468px;
+    }
+    .terms-cond{
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    .forgot-container {
+        flex-direction: row;
+        padding-top:1rem;
+        padding-bottom:2rem;
+    }
+    .forgot-container .content{
+        padding: 0 2rem 0rem 2rem;
+        text-align: center;
+    }
+    .register-container{
+        top:0;
+        padding: 0rem 0 2.5rem 0;
+    }
+}
+@media screen and (min-width: 481px) and (max-width:640px) {
+    .form-img{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 3rem;
+    }
+    .form-container {
+        flex-direction: column;
+        width: 438px;
+    }
+    .form {
+        width: 100%;
+    }
+    .input-container form .input-content input{
+        width: 368px;
+    }
+    .form-btn button{
+        width: 368px;
+    }
+    .terms-cond{
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    .forgot-container {
+        flex-direction: column;
+        padding-top:1rem;
+    }
+    .left-side{
+        position:inherit;
+    }
+    .right-side{
+        left:0;
+    }
+    .forgot-container .content{
+        padding: 0 2rem 0rem 2rem;
+        text-align: center;
+    }
+    .register-container{
+        top:0;
+        padding: 0rem 0 2.5rem 0;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .form-img{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 3rem;
+    }
+    .form-container {
+        flex-direction: column;
+        width: 300px;
+    }
+    .form {
+        width: 100%;
+    }
+    .input-container form .input-content input{
+        width: 238px;
+    }
+    .form-btn button{
+        width: 238px;
+    }
+    .terms-cond{
+        padding-left:16px;
+        padding-right: 16px;
+    }
+    .forgot-container {
+        flex-direction: column;
+        padding-top:1rem;
+    }
+    .left-side{
+        position:inherit;
+    }
+    .right-side{
+        left:0;
+    }
+    .forgot-container .login{
+        padding: 0 2rem 2.25rem 2rem;
+        text-align: center;
+    }
+    .register-container{
+        top:0;
+        padding: 0rem 0 2.5rem 0;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .form-img{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 3rem;
+    }
+    .form-container {
+        flex-direction: column;
+        width: 288px;
+    }
+    .form {
+        width: 100%;
+    }
+    .input-container form .input-content input{
+        width: 208px;
+    }
+    .form-btn button{
+        width: 208px;
+    }
+    .terms-cond{
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    .forgot-container {
+        flex-direction: column;
+        padding-top:1rem;
+    }
+    .left-side{
+        position:inherit;
+    }
+    .right-side{
+        left:0;
+    }
+    .forgot-container .login{
+        padding: 0 2rem 2.25rem 2rem;
+        text-align: center;
+    }
+    .register-container{
+        top:0;
+        padding: 0rem 0 2.5rem 0;
+    }
+}
